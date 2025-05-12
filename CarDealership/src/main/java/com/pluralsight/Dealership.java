@@ -12,6 +12,7 @@ public class Dealership {
         this.name = name;
         this.address = address;
         this.phoneNumber = phoneNumber;
+        this.inventory = new ArrayList<>();
     }
 
     public String getName() {
@@ -66,7 +67,17 @@ public class Dealership {
         return null;
     }
 
+    public void addVehicle(Vehicle vehicle){
+        inventory.add(vehicle);
+    }
+
+    public void removeVehicle(Vehicle vehicle){
+        inventory.remove(vehicle);
+    }
+
 }
+
+//Vehicle vehicle = new Vehicle()
 
 //Dealership dealership = new Dealership("fds", "fsd", "dfsa");
 //dealership.getAllVehicles();
