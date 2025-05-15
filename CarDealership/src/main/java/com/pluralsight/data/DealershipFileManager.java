@@ -1,4 +1,6 @@
-package com.pluralsight;
+package com.pluralsight.data;
+
+import com.pluralsight.model.Dealership;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -37,7 +39,6 @@ public class DealershipFileManager {
 
         return dealership;
     }
-
 
     public void saveDealership(Dealership dealership){
 
